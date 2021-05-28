@@ -11,10 +11,10 @@ const App = () => {
     return (
         <div className="App">
             <Switch>
-                <Route exact path={"/pet-project"} render={() => <Profile/>}/>
-                <Route path={"/pet-project/login"} render={() => <Login/>}/>
-                <Route path={"/pet-project/register"} render={() => <Registration/>}/>
-                <Route path={"/pet-project/test"} render={() => <Test/>}/>
+                <Route exact path={"/"} render={() => <Profile/>}/>
+                <Route path={"/login"} render={() => <Login/>}/>
+                <Route path={"/register"} render={() => <Registration/>}/>
+                <Route path={"/test"} render={() => <Test/>}/>
                 <Route path={'*'} render={() => <NotFound/>}/>
             </Switch>
         </div>
